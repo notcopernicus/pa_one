@@ -12,9 +12,12 @@
     Note: 
         Array Based Implementation and Linked List Implementation
 
-*Queue* is a linear data structure in whcih elements are organized in a FIFO (First in, First out) manner. *Deque* or double ended queue allows for insertion and removal at both ends of the queue.
+*Queue* is a linear data structure in whcih elements are organized in a FIFO (First in, First out) manner.
+
+ *Deque* or double ended queue allows for insertion and removal at both ends of the queue.
     
     *Operations & Time Complexity:*
+
         1. Enqueue (insertion) — O(1)
         2. Dequeue (deletion) - O(n)
         3. Front (get front) - O(1)
@@ -24,14 +27,19 @@
 
     *Note:* 
         Circular Array Implementation moves the front and rear using modular arithmetic and makes all operations in O(1) time complexity.
+
          - May waste space
 
-        Simple Array Implementation inserts at the rear O(1) and removes from the front O(n). If we remove from rear and add to front then inserntion becomes O(n), where n is the number of elements in our queue. 
+        Simple Array Implementation inserts at the rear O(1) and removes from the front O(n). 
+        
+        If we remove from rear and add to front then inserntion becomes O(n), where n is the number of elements in our queue. 
 
         Linked List Implementation has a front that points to the first node or head of the queue and a rear that points to the last node or the tail of the queue.
+
         - Always has space
 
     *Examples:*
+
         1. Round Robin Scheduling
         2. Buffered I/O
         3. Emailing
@@ -41,10 +49,11 @@
 
 
 #### Important Terminology
+
 1. Abstract Data Type - Mathematical description of a "thing" with set operations not concerned with implementation details
 2. Algorithm - A high level, language-independent set of step-by-step instructions.
 3. Data Structure - A specific organization of data and family of algorithms for implementing a ADT.
-
+4. Generics - Allow you to decouple the ADT (structure) from the data (content)
 
 
 #### Resources
