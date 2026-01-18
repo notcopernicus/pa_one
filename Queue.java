@@ -14,7 +14,7 @@ public class Queue<T> {
 
     // 4. Input is type T
     public void enqueue(T x) {
-        if (isFull()) { //could/not use helper mehtod
+        if (isFull()) { //could/not use helper
             System.out.println("Queue Overflow");
             return;
         }
