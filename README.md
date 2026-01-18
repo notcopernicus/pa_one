@@ -70,4 +70,4 @@ I chose a circular array for queue implementation for easy underatanding. Howeve
 
 Coding Task:
     1. Implement a linked list stack
-    2. Write recursive method that checks for balanced parentheses
+    2. Implement a circular queue
