@@ -1,6 +1,6 @@
 public class Stack<T> {
 
-    // The Inner Class: The container for your data
+
     private static class Node<T> {
         T data;
         Node<T> next;
@@ -11,36 +11,66 @@ public class Stack<T> {
         }
     }
 
-    // The Only Pointer You Need
     private Node<T> top; 
 
-    // Constructor
     public Stack() {
-        this.top = null; // Stack starts empty
+        this.top = null;
     }
 
-    // 1. Add item to the top
     public void push(T item) {
-        // Create new node
-        // Point new node to current top
-        // Update top to be the new node
+        
+        Node<T> newNode = new Node<>(item);
+        
+        
+        newNode.next = top;
+        
+        
+        top = newNode;
     }
 
-    // 2. Remove and return item from the top
+
     public T pop() {
-        // If empty, return null (or throw exception)
-        // Save data from top
-        // Move top to top.next
-        // Return saved data
+        
+        if (top == null) {
+            return null; 
+        }
+        
+        // Save the data we want to return
+        T item = top.data;
+        
+        // Move the pointer down
+        top = top.next;
+        
+        
+        return item;
     }
 
-    // 3. Look at top without removing
     public T peek() {
-        // Check if empty
-        // Return top.data
+        if (top == null) {
+            return null;
+        }
+        
+        return top.data;
     }
 
     public boolean isEmpty() {
         return top == null;
     }
-}
+        public static void main(String[] args) {
+            // Test Integer Stack
+            Stack<Integer> numStack = new Stack<>();
+            System.out.println("Pushing 10, 20, 30");
+            numStack.push(10);
+            numStack.push(20);
+            numStack.push(30);
+    
+            System.out.println("Popped: " + numStack.pop()); // Should be 30
+            System.out.println("Peek: " + numStack.peek());   // Should be 20
+    
+            // Test String Stack (To prove Generics work)
+            Stack<String> wordStack = new Stack<>();
+            wordStack.push("Java");
+            wordStack.push("Rocks");
+            System.out.println("Popped: " + wordStack.pop()); // Should be "Rocks"
+        }
+    }
