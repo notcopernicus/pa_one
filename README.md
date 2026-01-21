@@ -78,7 +78,14 @@ I chose a linked list for stack implementation because theres no fixed capacity,
 I chose a circular array for queue implementation for easy underatanding. However, linked list queue implementation doesn't have a fixed compacity, unlike array implementation in which overflow occurs when the size == capacity.
 
 Coding Task:
-    1. Implement a linked list stack
-    2. Implement a circular queue
+    1. Implement a linked list stack (finished 01-20-26 19:06)
+    2. Implement a circular queue (finished 01-20-26 19:06)
 
 01-19-26 23:55
+
+01-20-26 19:06
+
+"Linear structures can be thought of as having two ends. Sometimes these ends are referred to as the left and the right, or in some cases the front and the rear. You could also call them the top and the bottom. The names given to the ends are not significant. What distinguishes one linear structure from another is the way in which items are added and removed, in particular the location where these additions and removals occur. For example, a structure might allow new items to be added at only one end. Some structures might allow items to be removed from either end." - Problem Solving with Algorithms and Data Structures Bradley N. Miller
+
+Coding Task:
+    Implement 
