@@ -75,7 +75,7 @@ Queue Circular Array Implementation - https://www.geeksforgeeks.org/dsa/introduc
 GenAI: Gemini was utilized for ideation and concept clarification, however all code is original.
 
 
-# Personal Thoughts
+##### Other Notes:
 
 *01-18-26 14:05 PM -*
 
@@ -90,6 +90,7 @@ Coding Task:
     2. Implement a circular queue (finished 01-20-26 19:06)
 
 01-19-26 23:55
+    Nothing to commit
 
 01-20-26 19:06
 
@@ -99,3 +100,5 @@ Coding Task:
 1-23-26 18:33
 
 Assignment is due! I change my mind about the circulation it actually is actually more difficult to implement than a linked list
+
+9:20
