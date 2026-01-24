@@ -49,7 +49,7 @@ public class StackDS<T> {
         return size;
     }
     
-    // Doubles the capacity of the internal array
+    // Doubles the capacity of the array
     private void expandCapacity() {
         Object[] newArray = new Object[elements.length * 2];
         for (int i = 0; i < elements.length; i++) {

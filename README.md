@@ -101,4 +101,6 @@ Coding Task:
 
 Assignment is due! I change my mind about the circulation it actually is actually more difficult to implement than a linked list
 
-21:20 Recursion is simply a function that calls itself
+21:20 Recursion is simply a function that calls itself. Our balance checker uses a stack to ensure that matching string elements are present
+
+Example: "{{(}}" str[2] doesn't have an adjacent closing parenthesis and thus it is unbalanced.
