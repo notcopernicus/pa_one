@@ -54,7 +54,14 @@
 2. Algorithm - A high level, language-independent set of step-by-step instructions.
 3. Data Structure - A specific organization of data and family of algorithms for implementing a ADT.
 4. Generics - Allow you to decouple the ADT (structure) from the data (content)
+5. Time Quantum - A preemptive scheduler process runs until it is placed back in the ready queue and another process is placed into the run state.
+6. Recursion
 
+#### Assignment Writeup
+
+We are being asked to implement two data structures from scratch to solve two real world computing problems: parsing methematical expressions and scheduling CPU tasks.
+
+We now know that stacks are perfect for nested or order-reversing problem, while queues are essential for fair, sequential processing (printer jobs etc)
 
 #### Resources
 
@@ -65,13 +72,14 @@ Stack Linked List Implementation - https://www.geeksforgeeks.org/dsa/queue-linke
 
 Queue Circular Array Implementation - https://www.geeksforgeeks.org/dsa/introduction-to-circular-queue/
 
+GenAI: Gemini was utilized for ideation and concept clarification, however all code is original.
 
 
 # Personal Thoughts
 
 *01-18-26 14:05 PM -*
 
- In this assignment, I will implement my stack using a linked list and implement my queue using a circular array. 
+In this assignment, I will implement my stack using a linked list and implement my queue using a circular array. 
 
 I chose a linked list for stack implementation because theres no fixed capacity, no overflow, efficient memory and easy operations. 
 
@@ -86,6 +94,8 @@ Coding Task:
 01-20-26 19:06
 
 "Linear structures can be thought of as having two ends. Sometimes these ends are referred to as the left and the right, or in some cases the front and the rear. You could also call them the top and the bottom. The names given to the ends are not significant. What distinguishes one linear structure from another is the way in which items are added and removed, in particular the location where these additions and removals occur. For example, a structure might allow new items to be added at only one end. Some structures might allow items to be removed from either end." - Problem Solving with Algorithms and Data Structures Bradley N. Miller
+ 
 
-Coding Task:
-    Implement 
+1-23-26 18:33
+
+Assignment is due! I change my mind about the circulation it actually is actually more difficult to implement than a linked list
