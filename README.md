@@ -1,4 +1,17 @@
-#### Stacks, Queues & Recursion
+#### Overview
+
+This project challenged me to build core data structures from scratch to solve real-world computing problems. I focused on two linear structures: the Stack and the Queue. While they seem similar, they manage data completely differently. The Stack uses a LIFO (Last-In, First-Out) approach, making it perfect for nested problems like checking math expressions. The Queue uses a FIFO (First-In, First-Out) approach, which is essential for fair processing tasks like CPU scheduling. Understanding this distinction was key to knowing which tool to use for the Expression Evaluator versus the Task Scheduler.
+
+For my Stack implementation, I chose a Linked List over an array. Arrays are limited by a fixed capacity, meaning they can "overflow" if you run out of space. By using a Linked List, my stack can grow dynamically and use memory efficiently. This choice ensured that all my critical operations—push, pop, peek, and isEmpty—run in O(1) or constant time. I applied this structure to build a recursive balance checker. I learned that recursion is simply a function that calls itself, allowing me to peel back layers of parentheses one by one to verify the expression.
+
+
+My experience with the Queue involved a significant pivot. I initially planned to use a Circular Array because I thought it would be easier to understand. However, as I approached the deadline on January 23, I realized that managing the "front" and "rear" pointers with modular arithmetic was more complex than anticipated and still carried the risk of wasting space. I switched to a Linked List implementation instead. This decision was crucial because it kept both enqueue and dequeue operations at O(1) efficiency, avoiding the O(n) slowness that happens when shifting elements in a simple array.
+
+
+Overall, this assignment helped me distinguish between an Abstract Data Type (the mathematical concept) and the actual Data Structure (the implementation). I grew my skills in using Generics to decouple the structure from the data, allowing my code to handle any type of content. I also gained a deeper appreciation for how operating systems use concepts like "Time Quantum" and Round Robin scheduling to keep processes running smoothly. To support my learning, I used Gemini for concept clarification and brainstorming, but I wrote all the code myself to ensure I mastered the logic.
+
+
+#### Notes: Stacks, Queues & Recursion
 
 *Stack* is a linear data structure in which elements are organized in a LIFO  (Last in first out) or FILO (First in last out) manner.
     
