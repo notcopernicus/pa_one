@@ -1,13 +1,5 @@
 #### Overview
 
-**Features**
-- Generic Data Structures: Custom Stack<T> (Linked List) and Queue<T> (Linked List) with O(1) operations.
-- Expression Engine: Recursive algorithm for balanced parentheses and Shunting Yard algorithm for infix-to-postfix conversion.
-Process Simulation: Round-Robin CPU scheduler with configurable time quantum.
-Language: Java 17+
-Concepts: Recursion, Generics, FIFO/LIFO, Algorithm Complexity (Big O)
-Testing: JUnit 5 for unit testing and edge case validation.
-
 This project challenged me to build core data structures from scratch to solve real-world computing problems. I focused on two linear structures: the Stack and the Queue. While they seem similar, they manage data completely differently. The Stack uses a LIFO (Last-In, First-Out) approach, making it perfect for nested problems like checking math expressions. The Queue uses a FIFO (First-In, First-Out) approach, which is essential for fair processing tasks like CPU scheduling. Understanding this distinction was key to knowing which tool to use for the Expression Evaluator versus the Task Scheduler.
 
 For my Stack implementation, I chose a Linked List over an array. Arrays are limited by a fixed capacity, meaning they can "overflow" if you run out of space. By using a Linked List, my stack can grow dynamically and use memory efficiently. This choice ensured that all my critical operations—push, pop, peek, and isEmpty—run in O(1) or constant time. I applied this structure to build a recursive balance checker. I learned that recursion is simply a function that calls itself, allowing me to peel back layers of parentheses one by one to verify the expression.
